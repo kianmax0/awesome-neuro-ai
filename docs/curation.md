@@ -4,9 +4,11 @@
 
 This list serves students and researchers moving between neuroscience and AI. It favors a manageable set of entry points across neural inspiration, models of brain computation, and empirical comparisons of brains and artificial networks. The [companion computational neuroscience list](https://github.com/kianmax0/awesome-computational-neuroscience) covers broader mathematical, biological, and analysis resources.
 
-The resource links in the README are also the sources for their descriptions. Placement and the proposed learning routes are editorial choices. Inclusion does not mean a tool has been installed, an experiment reproduced, or a biological claim independently validated.
+The resource links on the topical pages in `learn/`, `research/`, `practice/`, and `community/` are also the sources for their descriptions. The root README provides navigation. Placement and the proposed learning routes are editorial choices. Inclusion does not mean a tool has been installed, an experiment reproduced, or a biological claim independently validated.
 
 ## Initial review: 2026-10-11
+
+This historical audit covered the original single-page resource directory, before the resources were moved to topical pages.
 
 The first pass checked paper identities and descriptions against publisher pages or author manuscripts, and checked courses, tools, datasets, and benchmarks against their official pages or maintainer repositories. Search-indexed source text was used where a live publisher page blocked automated access. No software installation or paper reproduction was performed.
 
@@ -23,7 +25,13 @@ Specific decisions:
 - Allen Brain Observatory links to the ecosystem overview to distinguish Visual Coding and Visual Behavior collections and recording modalities.
 - Model fit, computational results, and biological mechanisms are described separately.
 
-Validation on this date used lychee 0.24.2. The offline run passed 42 local-link occurrences with fragment checking enabled. A separate full request run passed all 73 link occurrences (47 unique targets), with no errors, timeouts, or exclusions. These results establish link-check outcomes at review time; page content and scientific quality require the source review described above.
+Validation of that original layout on this date used lychee 0.24.2. The offline run passed 42 local-link occurrences with fragment checking enabled. A separate full request run passed all 73 link occurrences (47 unique targets), with no errors, timeouts, or exclusions. These results establish link-check outcomes at review time; page content and scientific quality require the source review described above.
+
+## Directory restructuring
+
+The directory restructuring moved the existing 27 resource entries into four topical pages: `learn/README.md`, `research/README.md`, `practice/README.md`, and `community/README.md`. It added no resources. The root README became a navigation page, and the Chinese guide and contribution instructions were updated to link to the new destinations. The initial audit counts above describe the original layout; they are not validation results for the restructured directory.
+
+Validation of the new layout confirmed that all 27 original resource descriptions and URLs were preserved verbatim, with one entry per resource. Lychee 0.24.2 passed 87 local-link occurrences with fragment checking enabled, and a separate full request run passed all 118 link occurrences (49 unique targets), with no errors, timeouts, or exclusions. Both workflow jobs now cover every Markdown page recursively.
 
 ## Ongoing review
 
@@ -31,7 +39,7 @@ Validation on this date used lychee 0.24.2. The offline run passed 42 local-link
 2. Review the weekly external-link report in GitHub Actions. Check failed URLs manually, follow legitimate project moves, and replace stale URLs with canonical destinations.
 3. Revisit tool maintenance and dataset access notes when updating the list. Retain historically useful resources with explicit limitations.
 4. Remove a resource if its relevance or provenance cannot be established. Explain the reason in the pull request or commit.
-5. After substantive changes, inspect the rendered README and Chinese guide, including the table of contents and local cross-links.
+5. After substantive changes, inspect the rendered root README, topical pages, and Chinese guide, including their navigation and local cross-links.
 
 The workflow runs local file and heading checks on pushes and pull requests. On Mondays at 02:00 UTC, and on manual dispatch, it additionally checks external URLs. External-link failures remain visible for review; publisher access restrictions are not globally ignored. The workflow produces a job summary and does not automatically add, remove, or endorse resources.
 

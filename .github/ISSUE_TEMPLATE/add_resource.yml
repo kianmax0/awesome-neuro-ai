@@ -1,5 +1,5 @@
 name: Suggest a resource
-description: Propose a useful NeuroAI paper, course, tool, dataset, or benchmark.
+description: Propose a useful NeuroAI resource for learn, research, practice, or community.
 title: "Resource: "
 body:
   - type: input
@@ -18,7 +18,8 @@ body:
   - type: dropdown
     id: category
     attributes:
-      label: Suggested section
+      label: Suggested topical section
+      description: Reviews and courses go in learn/README.md; research topics in research/README.md; tools, datasets, and benchmarks in practice/README.md; related lists in community/README.md.
       options:
         - Reviews and foundations
         - Courses and tutorials
@@ -57,5 +58,5 @@ body:
     attributes:
       label: Before submitting
       options:
-        - label: I searched the existing list for this resource and read CONTRIBUTING.md.
+        - label: I searched the topical pages in learn, research, practice, and community for this resource and read CONTRIBUTING.md.
           required: true
