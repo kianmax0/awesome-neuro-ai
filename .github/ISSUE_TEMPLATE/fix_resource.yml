@@ -1,0 +1,22 @@
+name: Correct a resource
+description: Report a broken link, outdated description, or resource that should be removed.
+title: "Correction: "
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Resource name or URL
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What needs correcting?
+      description: Include the source or error you observed and when you checked it.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested correction
+      description: Include the canonical replacement URL or supporting evidence, if available.

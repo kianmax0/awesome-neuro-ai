@@ -1,0 +1,61 @@
+name: Suggest a resource
+description: Propose a useful NeuroAI paper, course, tool, dataset, or benchmark.
+title: "Resource: "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical URL
+      description: Prefer an author, publisher, institution, or maintainer page.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested section
+      options:
+        - Reviews and foundations
+        - Courses and tutorials
+        - Comparing brains and models
+        - Learning rules and predictive coding
+        - Memory, planning, and decision-making
+        - Tools and environments
+        - Datasets
+        - Benchmarks
+        - Related lists
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why include it?
+      description: Explain its NeuroAI relevance, intended readers, and what they can learn or do. Propose a short factual description.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification and limitations
+      description: Explain what you checked or used. Note publication status, access restrictions, dependencies, or maintenance concerns.
+    validations:
+      required: true
+  - type: textarea
+    id: relationship
+    attributes:
+      label: Relationship to the resource
+      description: Disclose if you are an author, maintainer, or affiliated with the project; otherwise write none.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing list for this resource and read CONTRIBUTING.md.
+          required: true
