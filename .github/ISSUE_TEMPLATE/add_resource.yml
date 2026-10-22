@@ -1,5 +1,5 @@
 name: Suggest a resource
-description: Propose a useful NeuroAI resource for learn, research, practice, or community.
+description: Propose a useful NeuroAI learning resource, paper, tool, dataset, benchmark, or community resource.
 title: "Resource: "
 body:
   - type: input
@@ -18,25 +18,24 @@ body:
   - type: dropdown
     id: category
     attributes:
-      label: Suggested topical section
-      description: Reviews and courses go in learn/README.md; research topics in research/README.md; tools, datasets, and benchmarks in practice/README.md; related lists in community/README.md.
+      label: Suggested destination
+      description: Choose the resource's primary type. Papers belong in topics; tools, datasets, and benchmarks have separate resource pages. Learning routes and projects link to canonical entries.
       options:
-        - Reviews and foundations
-        - Courses and tutorials
-        - Comparing brains and models
-        - Learning rules and predictive coding
-        - Memory, planning, and decision-making
-        - Tools and environments
-        - Datasets
-        - Benchmarks
-        - Related lists
+        - "Learn: programming, mathematics, textbooks, or reviews"
+        - "Learn: courses, tutorials, or public lectures"
+        - "Topics: research or methods paper"
+        - "Resources: software, simulators, or task environments"
+        - "Resources: datasets or data archives"
+        - "Resources: benchmarks and evaluations"
+        - "Community: collections, conversations, conferences, or training"
+        - "Start here or Projects: improve a route or exercise"
     validations:
       required: true
   - type: textarea
     id: relevance
     attributes:
       label: Why include it?
-      description: Explain its NeuroAI relevance, intended readers, and what they can learn or do. Propose a short factual description.
+      description: Explain its NeuroAI relevance, scientific question, intended readers, useful background, and what they can learn or do. Propose a short factual description.
     validations:
       required: true
   - type: textarea
@@ -58,5 +57,5 @@ body:
     attributes:
       label: Before submitting
       options:
-        - label: I searched the topical pages in learn, research, practice, and community for this resource and read CONTRIBUTING.md.
+        - label: I searched the canonical pages in learn, topics, resources, and community for this resource and read CONTRIBUTING.md.
           required: true

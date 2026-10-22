@@ -2,9 +2,9 @@
 
 ## Scope
 
-This list serves students and researchers moving between neuroscience and AI. It favors a manageable set of entry points across neural inspiration, models of brain computation, and empirical comparisons of brains and artificial networks. The [companion computational neuroscience list](https://github.com/kianmax0/awesome-computational-neuroscience) covers broader mathematical, biological, and analysis resources.
+This list serves curious readers, students, people crossing between neuroscience and AI, model builders, researchers, and educators. It favors a manageable set of entry points across neural inspiration, models of brain computation, and empirical comparisons of brains and artificial networks. The [companion computational neuroscience list](https://github.com/kianmax0/awesome-computational-neuroscience) covers broader mathematical, biological, and analysis resources.
 
-The resource links on the topical pages in `learn/`, `research/`, `practice/`, and `community/` are also the sources for their descriptions. The root README provides navigation. Placement and the proposed learning routes are editorial choices. Inclusion does not mean a tool has been installed, an experiment reproduced, or a biological claim independently validated.
+The resource links on the canonical pages in `learn/`, `topics/`, `resources/`, and `community/` are also the sources for their descriptions. The root README provides goal-based navigation. [Start here](../start-here/README.md), [pathways](../start-here/pathways.md), and [projects](../projects/README.md) connect those entries without duplicating descriptions. Placement, topic boundaries, background guidance, and suggested exercises are editorial choices. Inclusion does not mean a tool has been installed, an experiment reproduced, or a biological claim independently validated.
 
 ## Initial review: 2026-10-11
 
@@ -35,11 +35,13 @@ Validation of the new layout confirmed that all 27 original resource description
 
 ## Ongoing review
 
+The current resource map separates introductions and learning materials, research questions and papers, practical resource types, project exercises, and community entry points. Current content is selective; a topic's presence does not imply comprehensive coverage. The [2026-10-22 restructuring record](curation-notes/2026-10-22-navigation-restructure.md) documents the migration of the 55-entry starting collection. The subsequent [coverage expansion](curation-notes/2026-10-22-coverage-expansion.md) adds 26 resources, bringing the collection to 81, with linked source evidence for learning, research, and practical additions. Earlier review results above describe earlier layouts.
+
 1. Review proposed additions against [the contribution criteria](../CONTRIBUTING.md). Record why the resource helps readers and disclose whether it was used or only inspected.
 2. Review the weekly external-link report in GitHub Actions. Check failed URLs manually, follow legitimate project moves, and replace stale URLs with canonical destinations.
 3. Revisit tool maintenance and dataset access notes when updating the list. Retain historically useful resources with explicit limitations.
 4. Remove a resource if its relevance or provenance cannot be established. Explain the reason in the pull request or commit.
-5. After substantive changes, inspect the rendered root README, topical pages, and Chinese guide, including their navigation and local cross-links.
+5. After substantive changes, inspect the rendered root README, start-here pages, canonical resource pages, and projects, including Chinese text, tables, navigation, and local cross-links. Preserve existing guide paths and heading anchors as short navigation pages when moving material.
 
 The workflow runs local file and heading checks on pushes and pull requests. On Mondays at 02:00 UTC, and on manual dispatch, it additionally checks external URLs. External-link failures remain visible for review; publisher access restrictions are not globally ignored. The workflow produces a job summary and does not automatically add, remove, or endorse resources.
 
