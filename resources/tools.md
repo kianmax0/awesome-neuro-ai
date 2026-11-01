@@ -17,6 +17,7 @@ Tools here cover task design, recurrent and spiking models, representation analy
 | Learn embeddings from neural activity | [CEBRA](#cebra) | Contrastive neural embeddings using time or auxiliary behavioral variables | APIs can change; version 0.4.0 onward uses Apache 2.0, earlier releases have academic-use terms, and the project discloses patents. |
 | Extract model features and compare them with brain responses | [Net2Brain](#net2brain) | Feature extraction, dissimilarity matrices, RSA, and encoding analyses | Check the chosen model family's dependencies and its model/data terms; some model collections require Linux. |
 | Compare learning rules under sequential experience | [Avalanche](#avalanche) | Replay, elastic weight consolidation (EWC), and accuracy/forgetting metrics | Specify the stream, task-label availability, and memory budget; dataset terms are separate from the library's MIT license. |
+| Study agents that keep learning while they act | [Cadence](#cadence) | Equilibrium settling, a local contrastive learning rule, and working, associative, and episodic memory | Alpha research software under GPL-3.0; follow the repository setup instructions. |
 | Study muscle-driven control and adaptation | [MyoSuite](#myosuite) | MuJoCo musculoskeletal environments, sensory feedback, and motor-control tasks | Match documentation, environment version, and training backend; some environment changes require retraining older policies. |
 | Assemble neural-data research workflows | [Meta NeuroAI suite](#meta-neuroai-suite) | Loaders, dataset retrieval, training, and evaluation tools | Follow the suite's repository setup instructions. |
 
@@ -83,6 +84,10 @@ Test how learning new experiences changes performance on earlier ones. The strea
 ### Avalanche
 
 - [Avalanche](https://avalanche.continualai.org/) - PyTorch framework for comparing continual-learning strategies such as replay and elastic weight consolidation (EWC), with shared data streams and accuracy, transfer, and forgetting metrics. Use it to test learning-rule tradeoffs under a stated experience sequence and memory budget; dataset licenses remain separate from the MIT-licensed library.
+
+### Cadence
+
+- [Cadence](https://github.com/muellerberndt/cadence) - Python library for brain-inspired agents that keep learning while they act: reciprocal regions settle into an equilibrium, an equilibrium-propagation-style local rule compares free and nudged phases instead of using backpropagation, and working, associative, and episodic memory are built in. Alpha research software under GPL-3.0, described in an author preprint on [PhilPapers](https://philpapers.org/rec/MUECAP-2).
 
 ## Embodied control
 
